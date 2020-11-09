@@ -1,6 +1,6 @@
 ﻿namespace Sudoku_Solver
 {
-    partial class SudokuSolver
+    partial class InputForm
     {
         /// <summary>
         /// Required designer variable.

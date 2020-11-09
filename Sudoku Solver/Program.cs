@@ -16,7 +16,7 @@ namespace Sudoku_Solver
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SudokuSolver());
+            Application.Run(new InputForm());
         }
     }
 }
