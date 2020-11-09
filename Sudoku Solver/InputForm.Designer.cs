@@ -110,6 +110,7 @@
             this.textBox81 = new System.Windows.Forms.TextBox();
             this.SolveButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox2
@@ -674,9 +675,11 @@
             // 
             // SolveButton
             // 
-            this.SolveButton.Location = new System.Drawing.Point(113, 336);
+            this.SolveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SolveButton.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SolveButton.Location = new System.Drawing.Point(30, 315);
             this.SolveButton.Name = "SolveButton";
-            this.SolveButton.Size = new System.Drawing.Size(117, 56);
+            this.SolveButton.Size = new System.Drawing.Size(285, 54);
             this.SolveButton.TabIndex = 81;
             this.SolveButton.Text = "Solve";
             this.SolveButton.UseVisualStyleBackColor = true;
@@ -689,11 +692,24 @@
             this.textBox1.Size = new System.Drawing.Size(24, 22);
             this.textBox1.TabIndex = 82;
             // 
-            // SudokuSolver
+            // clearButton
+            // 
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clearButton.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.clearButton.Location = new System.Drawing.Point(112, 375);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(117, 26);
+            this.clearButton.TabIndex = 83;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
+            // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 413);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox3);
@@ -776,7 +792,7 @@
             this.Controls.Add(this.textBox80);
             this.Controls.Add(this.textBox81);
             this.Controls.Add(this.SolveButton);
-            this.Name = "SudokuSolver";
+            this.Name = "InputForm";
             this.Text = "Sudoku Solver";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -866,6 +882,7 @@
         private System.Windows.Forms.TextBox textBox81;
         private System.Windows.Forms.Button SolveButton;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 

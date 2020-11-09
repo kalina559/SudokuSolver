@@ -49,5 +49,10 @@ namespace Sudoku_Solver
                 }
             }
         }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            Helper.clearTextBoxes(this);
+        }
     }
 }

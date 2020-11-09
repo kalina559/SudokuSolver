@@ -28,6 +28,25 @@ namespace Sudoku_Solver
                 }
             }
         }
+        static public void clearTextBoxes(Form f)            //read from all the textboxes row by row, starting from top left corner
+        {
+            int i = 0, j = 0;
+            foreach (var control in f.Controls)
+            {
+                if (control.GetType().Name == "TextBox")
+                {
+                    var textBox = control as TextBox;
+                    textBox.Text = "";
+
+                    ++i;
+                    if (i % 9 == 0 && i != 0)
+                    {
+                        i = 0;
+                        ++j;
+                    }
+                }
+            }
+        }
         static public bool findSolution(ref int[,] array)
         {
             return fillNextEmptyField(ref array);
